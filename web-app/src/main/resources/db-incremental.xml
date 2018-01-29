@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+	<changeSet id="user.create" author="vishwa" failOnError="true" runAlways="true">
+		<sql>
+			CREATE TABLE TEST_TABLE (
+				SNO INT(10) NOT NULL AUTO_INCREMENT,
+				NAME VARCHAR(40) NOT NULL,
+				PRIMARY KEY (SNO)
+			)
+		</sql>
+	</changeSet>
+</databaseChangeLog>
